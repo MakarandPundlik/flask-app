@@ -1,0 +1,11 @@
+
+{% extends "layout.html" %}
+{% block content %}
+     <!-- same as JSP in advanced Java -->
+    {% for post in posts: %}
+    <h1>{{post.title}}</h1>
+    <p>{{post.content}}</p>
+    <p>{{post.author}}</p>
+    <p>{{post.date}}</p>
+    {% endfor %}
+{% endblock content %}
